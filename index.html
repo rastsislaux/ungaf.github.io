@@ -2,13 +2,13 @@
 <head>
     <title>ungaf</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
-    <link rel="stylesheet" type="text/css" href="semantic/semantic.js">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/classes.css">
     <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
+    <script src="semantic/semantic.js"></script>
 </head>
 <body>
     <div class="container header">
@@ -19,9 +19,10 @@
         <div class="grid">
             <div class="column">
                 <div class="ui secondary vertical menu">
-                    <a class="active item" id="pseudobsuir" type="button">pseudobsuir</a>
-                    <a class="item" id="respublicabot" type="button">respublicabot</a>
-                    <a class="item" id="belarabic" type="button">belarabic</a>
+                    <a class="item active" id="pseudobsuir" type="button" href="#pseudobsuir">pseudobsuir</a>
+                    <a class="item" id="respublicabot" type="button" href="#respublicabot">respublicabot</a>
+                    <a class="item" id="belarabic" type="button" href="#belarabic">belarabic</a>
+                    <a class="item" id="site" type="button" href="#site">ungaf.github.io</a>
                 </div>
             </div>
             <div class="column content" id="pseudobsuir_cnt">
@@ -55,6 +56,14 @@
                 <a href="https://ungaf.github.io/belarabic/"><button class="ui primary button" type="button">open on pages</button></a>
                 <a href="https://github.com/ungaf/belarabic/tree/gh-pages"><button class="ui button" type="button">open on github</button></a><br/>
                 <img src="imgs/belarabic_1.png" class="scaleable_image">
+            </div>
+            <div class="column content" hidden id="site_cnt">
+                <h1>ungaf.github.io</h1>
+                <p>
+                    this website lol
+                </p>
+                <a href="index.html"><button class="ui primary button" type="button">open on pages</button></a><br/>
+                <img src="imgs/site_1.png" class="scaleable_image">
             </div>
         </div>
     </div>
