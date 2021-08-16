@@ -19,11 +19,43 @@
         <div class="grid">
             <div class="column">
                 <div class="ui secondary vertical menu">
-                    <a class="item active" id="pseudobsuir" type="button" href="#pseudobsuir">pseudobsuir</a>
+                    <a class="item active" id="beeforgrub2" type="button" href="#beeforgrub2">beeforgrub2</a>
+                    <a class="item" id="pseudobsuir" type="button" href="#pseudobsuir">pseudobsuir</a>
                     <a class="item" id="respublicabot" type="button" href="#respublicabot">respublicabot</a>
                     <a class="item" id="belarabic" type="button" href="#belarabic">belarabic</a>
                     <a class="item" id="site" type="button" href="#site">ungaf.github.io</a>
                     <a class="item" id="lacinizatar" type="button" href="#lacninizatar">lacinizatar</a>
+                </div>
+            </div>
+            <div class="column content" id="beeforgrub2_cnt">
+                <img src="imgs/beeforgrub2.png" class="project_icon" width="85px">
+                <h1>BEE (BLS Entries Editor) for Grub2</h1>
+                <p>Tool to edit BLS-specified boot loader entries for Grub2<br>More info about specification
+                <a href="https://systemd.io/BOOT_LOADER_SPECIFICATION/"> on systemd website</a>.</p><hr/>
+                <div class="imgs_right" style="margin: -45px; margin-right: 80px;">
+                    <img src="imgs/beeforgrub2_2.png" class="scaleable_image">
+                </div>
+                <h3>How to use</h3>
+                <p>
+                    <li>Run it from terminal using "sudo python beeforgrub2.py" or "sudo ./beeforgrub2" (if you have it as a binary)</li>
+                    <li>Choose an entry you want to edit or create a new one</li>
+                    <li>Edit what you need and Save or Delete</li>
+                </p>
+                <h3>Default settings</h3>
+                <p>
+                    All settings are stored in a JSON file at /root/beeforgrub2/config.json<br>
+                    Default path to boot loader entry files is /boot/loader/entries<br>
+                    Default language is English (en_EN) but Russian (ru_RU) is also available.<br>
+                </p>
+                <h3>Compile it yourself using pyinstaller</h3>
+                <p>
+                    cd {directory}<br>
+                    pyinstaller --onefile --windowed --add-data "locales:locales" --add-data "etc:etc" beeforgrub2.py
+                </p><br>
+                <hr/>
+                <div class="buttons_div">
+                    <a href="https://github.com/ungaf/beeforgrub2/releases"><button class="ui primary button" type="button">download for linux</button></a>
+                    <a href="https://github.com/ungaf/beeforgrub2/"><button class="ui button" type="button">open on github</button></a>
                 </div>
             </div>
             <div class="column content" id="pseudobsuir_cnt">
