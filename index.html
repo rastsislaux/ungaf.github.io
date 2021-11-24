@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>ungaf</title>
+    <title>Rostislav Lipsky</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/classes.css">
@@ -12,26 +12,56 @@
 </head>
 <body>
     <div class="container header">
-        <h1 class="title">ungaf projects</h1>
-        <div class="hcontent right"><a href="https://vk.com/adamnoeva"><img src="imgs/vk.png" width="45px"></a></div>
+        <h1 class="title"><i class="user secret icon"></i>ROSTISLAV LIPSKY</h1>
+        <div class="hcontent right">
+            <a href="https://vk.com/leepsky"><img src="imgs/vk.png" width="45px"></a>
+            <a href="https://github.com/ungaf"><img src="imgs/github.png" width="45px"></a>
+        </div>
     </div>
     <div class="page">
         <div class="grid">
             <div class="column">
                 <div class="ui secondary vertical menu">
-                    <a class="item active" id="beeforgrub2" type="button" href="#beeforgrub2">beeforgrub2</a>
+                    About me
+                    <div class="ui divider"></div>
+                    <a class="item active" id="whoami" type="button" href="#whoami">Who am I</a>
+                    <br/>Projects
+                    <div class="ui divider"></div>
+                    <a class="item" id="beeforgrub2" type="button" href="#beeforgrub2">beeforgrub2</a>
                     <a class="item" id="pseudobsuir" type="button" href="#pseudobsuir">pseudobsuir</a>
                     <a class="item" id="respublicabot" type="button" href="#respublicabot">respublicabot</a>
                     <a class="item" id="belarabic" type="button" href="#belarabic">belarabic</a>
                     <a class="item" id="site" type="button" href="#site">ungaf.github.io</a>
-                    <a class="item" id="lacinizatar" type="button" href="#lacninizatar">lacinizatar</a>
+                    <a class="item" id="lacinizatar" type="button" href="#lacinizatar">lacinizatar</a>
                 </div>
             </div>
-            <div class="column content" id="beeforgrub2_cnt">
+            <div class="column content" id="whoami_cnt">
+                <h2>General info</h2>
+                <div class="ui divider"></div>
+                <div class="imgs_right">
+                    <img src="imgs/photo.jpg" width="400px">
+                </div>
+                My name's Rostislav Lipsky. I'm <a id = "age"></a> years old.
+                <br/>
+                Now I'm studying Artificial Intelligence at the Faculty of
+                Information Techonologies and Management, Belarusian State
+                University of Informatics and Radioelectronics.
+                <br><br>
+                <h2>Skills</h2>
+                <div class="ui divider"></div>
+                <b>Programming languages: </b>C++, Java, Python;<br>
+                <b>Other:</b> UNIX-like systems, Git, LaTeX.
+                <script>
+                    let container = document.getElementById('age');
+                    let age = Math.floor((Date.now() - 1068328800000) / 31536000000);
+                    container.innerHTML = age;
+                </script>
+            </div>
+            <div class="column content" id="beeforgrub2_cnt" hidden>
                 <img src="imgs/beeforgrub2.png" class="project_icon" width="85px">
                 <h1>BEE (BLS Entries Editor) for Grub2</h1>
                 <p>Tool to edit BLS-specified boot loader entries for Grub2<br>More info about specification
-                <a href="https://systemd.io/BOOT_LOADER_SPECIFICATION/"> on systemd website</a>.</p><hr/>
+                <a href="https://systemd.io/BOOT_LOADER_SPECIFICATION/"> on systemd website</a>.</p><div class="ui divider"></div>
                 <div class="imgs_right" style="margin: -45px; margin-right: 80px;">
                     <img src="imgs/beeforgrub2_2.png" class="scaleable_image">
                 </div>
@@ -52,7 +82,7 @@
                     cd {directory}<br>
                     pyinstaller --onefile --windowed --add-data "locales:locales" --add-data "etc:etc" beeforgrub2.py
                 </p><br>
-                <hr/>
+                <div class="ui divider"></div>
                 <div class="buttons_div">
                     <a href="https://github.com/ungaf/beeforgrub2/releases"><button class="ui primary button" type="button">download for linux</button></a>
                     <a href="https://github.com/ungaf/beeforgrub2/"><button class="ui button" type="button">open on github</button></a>
