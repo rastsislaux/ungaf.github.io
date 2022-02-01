@@ -1,0 +1,33 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.links {
+  box-shadow: black 0px 0px 20px;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+  padding-top:5px;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
