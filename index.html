@@ -1,143 +1,18 @@
 <!DOCTYPE html>
-<head>
-    <title>Rostislav Lipsky</title>
-    <link rel="stylesheet" type="text/css" href="semantic/semantic.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/classes.css">
-    <script
-        src="https://code.jquery.com/jquery-3.1.1.min.js"
-        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-        crossorigin="anonymous"></script>
-    <script src="semantic/semantic.js"></script>
-</head>
-<body>
-    <div class="container header">
-        <h1 class="title"><i class="user secret icon"></i>ROSTISLAV LIPSKY</h1>
-        <div class="hcontent right">
-            <a href="https://vk.com/leepsky"><img src="imgs/vk.png" width="45px"></a>
-            <a href="https://github.com/ungaf"><img src="imgs/github.png" width="45px"></a>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leepsky</title>
+  </head>
+  <body>
+    <canvas id="background"></canvas>
+    <div class="links">
+      Rostislav Lipsky, 2022 | 
+      <a href="https://github.com/ungaf">GitHub</a>
+      <a href="httpps://vk.com/leepsky">VK</a>
     </div>
-    <div class="page">
-        <div class="grid">
-            <div class="column">
-                <div class="ui secondary vertical menu">
-                    About me
-                    <div class="ui divider"></div>
-                    <a class="item active" id="whoami" type="button" href="#whoami">Who am I</a>
-                    <br/>Projects
-                    <div class="ui divider"></div>
-                    <a class="item" id="beeforgrub2" type="button" href="#beeforgrub2">beeforgrub2</a>
-                    <a class="item" id="pseudobsuir" type="button" href="#pseudobsuir">pseudobsuir</a>
-                    <a class="item" id="respublicabot" type="button" href="#respublicabot">respublicabot</a>
-                    <a class="item" id="belarabic" type="button" href="#belarabic">belarabic</a>
-                    <a class="item" id="site" type="button" href="#site">ungaf.github.io</a>
-                    <a class="item" id="lacinizatar" type="button" href="#lacinizatar">lacinizatar</a>
-                </div>
-            </div>
-            <div class="column content" id="whoami_cnt">
-                <h2>General info</h2>
-                <div class="ui divider"></div>
-                <div class="imgs_right">
-                    <img src="imgs/photo.jpg" width="400px">
-                </div>
-                My name's Rostislav Lipsky. I'm <a id = "age"></a> years old.
-                <br/>
-                Now I'm studying Artificial Intelligence at the Faculty of
-                Information Techonologies and Management, Belarusian State
-                University of Informatics and Radioelectronics.
-                <br><br>
-                <h2>Skills</h2>
-                <div class="ui divider"></div>
-                <b>Programming languages: </b>C++, Java, Python;<br>
-                <b>Other:</b> UNIX-like systems, Git, LaTeX.
-                <script>
-                    let container = document.getElementById('age');
-                    let age = Math.floor((Date.now() - 1068328800000) / 31536000000);
-                    container.innerHTML = age;
-                </script>
-            </div>
-            <div class="column content" id="beeforgrub2_cnt" hidden>
-                <img src="imgs/beeforgrub2.png" class="project_icon" width="85px">
-                <h1>BEE (BLS Entries Editor) for Grub2</h1>
-                <p>Tool to edit BLS-specified boot loader entries for Grub2<br>More info about specification
-                <a href="https://systemd.io/BOOT_LOADER_SPECIFICATION/"> on systemd website</a>.</p><div class="ui divider"></div>
-                <div class="imgs_right" style="margin: -45px; margin-right: 80px;">
-                    <img src="imgs/beeforgrub2_2.png" class="scaleable_image">
-                </div>
-                <h3>How to use</h3>
-                <p>
-                    <li>Run it from terminal using "sudo python beeforgrub2.py" or "sudo ./beeforgrub2" (if you have it as a binary)</li>
-                    <li>Choose an entry you want to edit or create a new one</li>
-                    <li>Edit what you need and Save or Delete</li>
-                </p>
-                <h3>Default settings</h3>
-                <p>
-                    All settings are stored in a JSON file at /root/beeforgrub2/config.json<br>
-                    Default path to boot loader entry files is /boot/loader/entries<br>
-                    Default language is English (en_EN) but Russian (ru_RU) is also available.<br>
-                </p>
-                <h3>Compile it yourself using pyinstaller</h3>
-                <p>
-                    cd {directory}<br>
-                    pyinstaller --onefile --windowed --add-data "locales:locales" --add-data "etc:etc" beeforgrub2.py
-                </p><br>
-                <div class="ui divider"></div>
-                <div class="buttons_div">
-                    <a href="https://github.com/ungaf/beeforgrub2/releases"><button class="ui primary button" type="button">download for linux</button></a>
-                    <a href="https://github.com/ungaf/beeforgrub2/"><button class="ui button" type="button">open on github</button></a>
-                </div>
-            </div>
-            <div class="column content" id="pseudobsuir_cnt" hidden>
-                <h1>pseudobsuir</h1>
-                <p>it's just a copy of <a href="https://priem.bsuir.by/">this</a> website, which i created in order to
-                learn how to create websites</p>
-                <a href="https://ungaf.github.io/pseudobsuir/"><button class="ui primary button" type="button">open on pages</button></a>
-                <a href="https://github.com/ungaf/pseudobsuir/tree/gh-pages"><button class="ui button" type="button">open on github</button></a><br/>
-                <img src="imgs/bsuir_1.png" class="scaleable_image">
-                <img src="imgs/bsuir_2.png" class="scaleable_image">
-                <img src="imgs/bsuir_3.png" class="scaleable_image">
-            </div>
-            <div class="column content" hidden id="respublicabot_cnt">
-                <h1>respublicabot</h1>
-                <p>it is a bot for vk which is created to interact with a content of a group, linked to the bot</p>
-                <a href="https://github.com/ungaf/respublicabot"><button class="ui primary button" type="button">open on github</button></a><br/>
-                <img src="imgs/respublica_1.png" class="scaleable_image">
-                <img src="imgs/respublica_2.png" class="scaleable_image">
-                <img src="imgs/respublica_3.png" class="scaleable_image">
-            </div>
-            <div class="column content" hidden id="belarabic_cnt">
-                <h1>belarabic</h1>
-                <p>
-                    Цель этого приложения - перевод белорусскоязычных текстов с обычного кириллического алфавита на необычный белорусский арабский алфавит (также известный как «арабица»), которым пользовались татары жившие на землях Великого Княжества Литовского.<br/><br/>
-                    Помните, что арабица не передает никаких гласных звуков, кроме «а», а также не имеет обозначения прописных или строчных букв.<br/><br/>
-                    Автор приложения - Адам Крыленко (https://vk.com/adamnoeva). Если у вас есть какие-либо вопросы или предложения - пишите мне в ВК.<br/><br/>
-                    Мэта гэтай прылады - пераклад беларускамоўных тэкстаў са звычайнага кірылічныга алфавіта на незвычайны беларускі арабскі алфавіт (таксама вядомы як «арабіца»), якім карысталіся татары, што жылі на землях Вялікага княства Літоўскага.<br/><br/>
-                    Ведайце, што арабіца не перадае ніякіх галосных гукаў акрамя «а», таксама ў арабскім пісьме няма вялікіх або маленькіх літар.<br/><br/>
-                    Аўтар прылады - Адам Крыленка (https://vk.com/adamnoeva). Калі у Вас ёсць нейкія пытанні ці прапановы - пішыце мне ў ВК.<br/><br/>
-                </p>
-                <a href="https://ungaf.github.io/belarabic/"><button class="ui primary button" type="button">open on pages</button></a>
-                <a href="https://github.com/ungaf/belarabic/tree/gh-pages"><button class="ui button" type="button">open on github</button></a><br/>
-                <img src="imgs/belarabic_1.png" class="scaleable_image">
-            </div>
-            <div class="column content" hidden id="site_cnt">
-                <h1>ungaf.github.io</h1>
-                <p>
-                    this website lol
-                </p>
-                <a href="index.html"><button class="ui primary button" type="button">open on pages</button></a>
-                <a href="https://github.com/ungaf/ungaf.github.io"><button class="ui button" type="button">open on github</button></a><br/>
-                <img src="imgs/site_1.png" class="scaleable_image">
-            </div>
-            <div class="column content" hidden id="lacinizatar_cnt">
-                <h1>lacinizatar</h1>
-                <p>a little python script that translates your plain belarusian text into latin belarusian text
-                    <br/><br/>P.S.: it has a little bug, so you need to switch your keyboard layout to english before transliterating
-                </p>
-                <a href="https://github.com/ungaf/lacinizatar/releases"><button class="ui primary button" type="button">download for windows</button></a>
-                <a href="https://github.com/ungaf/lacinizatar"><button class="ui button" type="button">open on github</button></a><br/>
-            </div>
-        </div>
-    </div>
-    <script src="scripts/index.js"></script>
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
