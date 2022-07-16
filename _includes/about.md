@@ -1,22 +1,28 @@
 <hr>
 
-My name is Rostislav Lispky, I'm student from Minsk, studying Artificial Intelligence at the Belarusian State University of Informatics and Radioelectronics.
-Programming has been my hobby since I was 10 y.o. and I've always dreamed of becoming a software engineer. Now my dream is closer than ever.
+My name is Rostislav Lispky. Currently I work as junior java developer at Elinext. I also study Artificial Intelligence at Belarusian State University of Informatics and Radioelectronics.
+
+My experience:
+
+* Elinext (since July, 2022), Junior Java Developer
+
+My skills:
+
+* Java (Spring Framework, Spring Boot, Spring MVC, Spring Data, Maven, Hibernate, JUnit, Mockito)
+* C++, Python
+* SQL (PostgreSQL, MySQL), MongoDB
+* Git, GitHub, GitLab
+* Linux, Bash
+* Docker & Docker Compose
+* LaTeX
 
 My education and courses:
- - AI, BSUIR (Bachelor degree): 2021 - present
- - Introduction to Java, EPAM: 2021 - 2022
 
-So, my main languages are Java and C++, I also use Python for some little automation tasks. I have some experience in programming, such as:
- - Library for clustering (Java, used in production)
- - Library for effective node connection in graphs (C++, used in production)
- - A utility to edit GRUB entries in BLS specification (C++)
- - VK bot for collecting statistics about communities (Python)
- - An application to automatically create schedule for my school (C#)
- - Copy of BSUIR website (HTML, CSS, Bootstrap)
+- Aritificial Intelligence, BSUIR (Bachelor degree): since 2021
+- Introduction to Java, EPAM: 2021 - 2022
 
 **You may need:**
 
-- <a href="mailto://{{ site.author.email }}">{{ site.author.email }}</a>
-- <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{{ site.author.linkedin }} on LinkedIn</a>
-- <a href="https://github.com/{{ site.author.github }}">{{ site.author.github }} on GitHub</a>
+- `<a href="mailto://{{ site.author.email }}">`{{ site.author.email }}`</a>`
+- `<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">`{{ site.author.linkedin }} on LinkedIn`</a>`
+- `<a href="https://github.com/{{ site.author.github }}">`{{ site.author.github }} on GitHub`</a>`
