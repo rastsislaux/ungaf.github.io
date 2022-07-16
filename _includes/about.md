@@ -33,6 +33,6 @@ My education and courses:
 
 **You may need:**
 
-- `<a href="mailto://{{ site.author.email }}">`{{ site.author.email }}`</a>`
-- `<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">`{{ site.author.linkedin }} on LinkedIn`</a>`
-- `<a href="https://github.com/{{ site.author.github }}">`{{ site.author.github }} on GitHub`</a>`
+- <a href="mailto://{{ site.author.email }}">{{ site.author.email }}</a>
+- <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">{{ site.author.linkedin }} on LinkedIn</a>
+- <a href="https://github.com/{{ site.author.github }}">{{ site.author.github }} on GitHub</a>
