@@ -8,18 +8,28 @@ My experience:
 
 My skills:
 
-* Java (Spring Framework, Spring Boot, Spring MVC, Spring Data, Maven, Hibernate, JUnit, Mockito)
+* Java (Spring Framework, Spring Boot, Spring MVC, Spring Data, Spring Security, Maven, Hibernate, JUnit, Mockito)
 * C++, Python
 * SQL (PostgreSQL, MySQL), MongoDB
 * Git, GitHub, GitLab
 * Linux, Bash
 * Docker & Docker Compose
 * LaTeX
+* English (advanced), set and graph theories
 
 My education and courses:
 
-- Aritificial Intelligence, BSUIR (Bachelor degree): since 2021
+- Artificial Intelligence, Faculty of Information Technology and Management, BSUIR (Bachelor degree): since 2021
+  - Basics of algorithmization and programming
+  - Presentation and processing of information in intelligent systems
+  - Set-theoretical basics of intelligent systems
 - Introduction to Java, EPAM: 2021 - 2022
+  - Basics of software code development
+  - Algorithmization
+  - Strings and basics of text processing
+  - Basics of Object-Oriented Programming
+  - Web sockets
+  - Multithreading
 
 **You may need:**
 
